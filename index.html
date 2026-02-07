@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIDDLE MUSIC | Official Label</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    
     <style>
-        /* Основные стили для минимализма */
         body {
             margin: 0;
             padding: 0;
@@ -15,55 +19,53 @@
             align-items: center;
             height: 100vh;
             background-color: #ffffff; /* Белый фон */
-            color: #000000; /* Черный текст */
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #ff0000; /* Красный текст */
+            font-family: 'Dela Gothic One', system-ui, sans-serif;
             text-align: center;
         }
 
-        /* Заголовок сверху */
+        /* Заголовок */
         h1 {
-            font-size: 3rem;
-            letter-spacing: 0.5rem;
-            text-transform: uppercase;
-            font-weight: 900;
+            font-size: 4rem;
             margin-bottom: 20px;
+            text-transform: uppercase;
+            line-height: 1;
         }
 
-        /* Описание в центре/внизу */
+        /* Описание */
         .description {
-            max-width: 600px;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            font-weight: 300;
-            margin: 0 20px 40px 20px;
-            color: #333333;
+            max-width: 700px;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            margin: 0 20px 50px 20px;
         }
 
         /* Кнопка */
         .contact-btn {
             display: inline-block;
-            padding: 15px 40px;
-            border: 2px solid #000000;
+            padding: 20px 50px;
+            border: 4px solid #ff0000;
             background-color: transparent;
-            color: #000000;
+            color: #ff0000;
             text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.1rem;
-            transition: all 0.3s ease;
+            font-family: 'Dela Gothic One', sans-serif;
+            font-size: 1.2rem;
+            transition: all 0.2s ease-in-out;
             cursor: pointer;
         }
 
-        /* Эффект при наведении на кнопку */
+        /* Эффект при наведении */
         .contact-btn:hover {
-            background-color: #000000;
+            background-color: #ff0000;
             color: #ffffff;
+            transform: scale(1.05); /* Легкое увеличение при наведении */
         }
 
-        /* Адаптивность для мобилок */
+        /* Адаптивность для телефонов */
         @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
+            h1 { font-size: 2.2rem; }
             .description { font-size: 0.9rem; }
+            .contact-btn { padding: 15px 30px; font-size: 1rem; }
         }
     </style>
 </head>
