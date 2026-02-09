@@ -59,7 +59,48 @@
             font-size: 1.1rem;
             line-height: 1.6;
             margin: 0;
-            text-transform: none; /* Чтобы текст читался как в оригинале */
+            text-transform: none;
+        }
+
+        /* ПЛОЩАДКИ С ЛОГОТИПАМИ */
+        .platforms-section {
+            width: 100%;
+            padding: 80px 20px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .platforms-section h2 { font-size: 2.5rem; margin-bottom: 60px; }
+        .platforms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        .platform-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .platform-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            filter: grayscale(1) invert(1); /* Делаем лого белыми под стиль блока */
+        }
+        .platform-item:hover img {
+            filter: grayscale(0) invert(0);
+            transform: scale(1.1);
+        }
+        .platform-item span {
+            color: #fff;
+            font-size: 0.9rem;
         }
 
         /* БЛОК 3: НИЗ */
@@ -91,6 +132,7 @@
             .block-2 { grid-template-columns: 1fr; }
             .logo { font-size: 3rem; }
             .btn-create { font-size: 2rem; padding: 20px 50px; }
+            .platforms-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
         }
     </style>
 </head>
@@ -104,15 +146,49 @@
     <div class="block-2">
         <div class="card">
             <h2>Все о нас</h2>
-            <p>
-                Мы представляем бесплатную дистрибуцию, промо и легко выходим на связь, можем выложить от 2 до 7 дней, альбомы можем выложить от 7 до 14 дней
-            </p>
+            <p>Мы представляем бесплатную дистрибуцию, промо и легко выходим на связь, можем выложить от 2 до 7 дней, альбомы можем выложить от 7 до 14 дней</p>
         </div>
         <div class="card">
             <h2>Наши требования</h2>
-            <p>
-                Мы не принимаем музыку сгенерированная ИИ, даже если вы имеете лицензию на использование ИИ все равно мы не можем принять ваш релиз или альбом, ИИ можно использовать только как инструмент. Тоесть, вокал, бит, мелодия и т.д. Также не принимаем музыку которая может нарушить закон УК РФ, и других стран как РФ, РБ, РК и т.д
-            </p>
+            <p>Мы не принимаем музыку сгенерированная ИИ, даже если вы имеете лицензию на использование ИИ все равно мы не можем принять ваш релиз или альбом, ИИ можно использовать только как инструмент. Тоесть, вокал, бит, мелодия и т.д. Также не принимаем музыку которая может нарушить закон УК РФ, и других стран как РФ, РБ, РК и т.д</p>
+        </div>
+    </div>
+
+    <div class="platforms-section">
+        <h2>НАМ ДОВЕРЯЮТ 100+ ПЛОЩАДОК</h2>
+        <div class="platforms-grid">
+            <a href="https://boom.ru" class="platform-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/VK_Logo.svg" alt="VK">
+                <span>VK MUSIC</span>
+            </a>
+            <a href="spotify.com" class="platform-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
+                <span>SPOTIFY</span>
+            </a>
+            <a href="https://music.youtube.com" class="platform-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Youtube_Music_icon.svg" alt="YT">
+                <span>YT MUSIC</span>
+            </a>
+            <a href="https://music.ya.ru" class="platform-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Yandex_Music_logo.svg" alt="YA">
+                <span>YA MUSIC</span>
+            </a>
+            <a href="https://deezer.com" class="platform-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Deezer_logo.svg" alt="Deezer">
+                <span>DEEZER</span>
+            </a>
+            <a href="https://zvuk.com" class="platform-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/HiFi_Streaming_Service_Zvuk_Logo.svg" alt="Zvuk">
+                <span>ZVUK</span>
+            </a>
+            <a href="https://music.mts.ru" class="platform-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/MTS_logo_2023.svg" alt="MTS">
+                <span>KION</span>
+            </a>
+            <a href="https://music.apple.com" class="platform-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+                <span>APPLE MUSIC</span>
+            </a>
         </div>
     </div>
 
